@@ -1,0 +1,13 @@
+[Unit]
+Description=Hermes Pet Monitor for AgentPet
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/hpmaster/hermes_pet_monitor.py --interval 3 --idle-timeout 15
+Restart=always
+RestartSec=10
+Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+
+[Install]
+WantedBy=default.target
