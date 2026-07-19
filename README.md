@@ -55,4 +55,4 @@ python relay_server.py
 
 ## License
 
-MIT
+Self
